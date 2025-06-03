@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom"
 import { AuthLogin } from "../Pages/AuthPages/AuthLogin"
 import { SetPasswordPage } from "../Pages/AuthPages/AuthConfirm"
 import { useEffect, useState } from "react";
+import { Login } from "../Pages/AuthPages/Login";
 
 export const AppRoutes = () => {
 
@@ -15,8 +16,9 @@ export const AppRoutes = () => {
     return (
         <>
             <Routes>
-                
-                <Route path="/*" element={hasPassword ? <AuthLogin /> : <SetPasswordPage />} />
+                <Route path='/login' element={<Login />} />
+                <Route path='/set_password' element={<SetPasswordPage />} />
+                <Route path="/*" element={hasPassword ? <AuthLogin /> : <Login />} />
             </Routes>
         </>
     )

@@ -30,7 +30,7 @@ export const SetPasswordPage = () => {
 
     return (
         <>
-            <div className="flex w-full h-screen justify-center items-center bg-gray-100">
+            <div className="flex w-full h-screen justify-center items-center bg-gradient-to-br from-purple-100 to-indigo-200">
                 <div className="w-full max-w-md bg-white rounded-2xl shadow-lg overflow-hidden">
                     
                     {/* Card Header */}
@@ -43,7 +43,7 @@ export const SetPasswordPage = () => {
                         <img
                             src={Icon}
                             alt="Phantom Logo"
-                            className="w-40 h-40 animate-bounce"
+                            className="w-40 h-40"
                         />
                     </div>
 
