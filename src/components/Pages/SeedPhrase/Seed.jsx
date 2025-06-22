@@ -1,7 +1,7 @@
 import { Copy } from "lucide-react";
 import { useEffect, useState } from "react";
-import { generateSeedPhrase } from "../../utils/generateMnemonics";
-import { countSeedPhrase } from "../../utils/countSeedPhrase";
+import { generateSeedPhrase } from "../../utils/wallet/generateMnemonics";
+import { countSeedPhrase } from "../../utils/wallet/countSeedPhrase";
 import { copyToClipboard } from "../../utils/copyToClipboard";
 
 
